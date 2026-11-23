@@ -1,0 +1,104 @@
+/* Estilos de la página de inicio */
+
+/* ---------- Portada con imagen ---------- */
+.hero {
+  position: relative;
+  height: 380px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--principal);
+}
+
+.hero-imagen {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Capa oscura sobre la imagen para que el texto se lea bien */
+.hero-texto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
+}
+
+.hero-texto h1 {
+  font-size: 2.4rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-texto p {
+  max-width: 600px;
+  margin: 0 auto 1.2rem auto;
+}
+
+/* ---------- Destinos populares ---------- */
+.destacado {
+  position: relative;
+  display: block;
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  background-color: var(--principal-oscuro);
+}
+
+.destacado img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.destacado:hover img {
+  transform: scale(1.05);
+}
+
+.destacado-info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.destacado-info h3,
+.destacado-info p {
+  margin: 0;
+}
+
+/* ---------- Diseño responsivo ---------- */
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 280px;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+/* Estilos generales de la aplicación */
+
+:root {
+  --principal: #0f766e;
+  --principal-oscuro: #0b4f4a;
+  --acento: #f97316;
+  --acento-oscuro: #ea6a0a;
+  --fondo: #faf6f0;
+  --borde: #e3dccf;
+  --texto: #1f2933;
+  --texto-suave: #5b6770;
+  --estrella: #e6a100;
+  --rojo: #b42318;
+  --verde: #1b7a3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: var(--fondo);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+a {
+  color: var(--principal);
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
